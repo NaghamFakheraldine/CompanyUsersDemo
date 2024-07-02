@@ -4,7 +4,7 @@ from flask_cors import CORS
 
 app = Flask(__name__)
 
-CORS(app, resources={r"/store-careers-lambda": {"origins": "http://127.0.0.1:5000"}}) 
+CORS(app) 
 
 # Initialize AWS clients with region specified
 region = os.getenv('AWS_REGION', 'us-east-1')
@@ -42,4 +42,4 @@ def fetch_users():
     return render_template('users.html', company_domain=company_domain)
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', debug=True)
+    app.run(host='0.0.0.0', port = 5000, debug=True)
