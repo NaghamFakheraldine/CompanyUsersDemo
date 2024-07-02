@@ -1,0 +1,42 @@
+html,
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Robot;
+    height: 100%;
+    width: 100%;
+}
+
+form {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5% 0 5% 0;
+    box-shadow: 0 6px 10px rgba(93, 96, 98, 0.7);
+
+}
+
+div {
+    margin: 0 0 10% 0;
+    font-size: 25px;
+    color: rgb(88, 93, 95);
+    font-weight: 400;
+}
+
+.textbox {
+    margin-bottom: 10%;
+    padding: 3%;
+    width: 80%;
+}
+
+.button {
+    width: 60%;
+    border-radius: 0;
+    cursor: pointer;
+    background-color: rgb(193, 217, 255);
+    border: none;
+    padding: 3%;
+}
